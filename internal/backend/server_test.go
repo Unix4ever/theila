@@ -212,7 +212,7 @@ func (s *ServerSuite) TestSubscription() {
 		Resource: &resource.WatchRequest{
 			Type: "node",
 		},
-		Source: common.Source_Talos,
+		Source: common.Runtime_Talos,
 	})
 
 	s.Require().NoError(err)
@@ -314,7 +314,7 @@ func (s *ServerSuite) TestSubscribeUnsubscribe() {
 		Resource: &resource.WatchRequest{
 			Type: "nope",
 		},
-		Source: common.Source_Talos,
+		Source: common.Runtime_Talos,
 	})
 
 	s.Require().NoError(err)
@@ -342,7 +342,7 @@ func (s *ServerSuite) TestBadInputs() {
 		Resource: &resource.WatchRequest{
 			Type: "boom",
 		},
-		Source: common.Source_Talos,
+		Source: common.Runtime_Talos,
 	})
 	s.Require().Error(err)
 

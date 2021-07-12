@@ -40,7 +40,7 @@ import (
 )
 
 // Name talos runtime string id.
-var Name = common.Source_Talos.String()
+var Name = common.Runtime_Talos.String()
 
 // ResourceList wraps multiple items responses from Talos resource API into a struct which is similar to what we have in Kubernetes.
 type ResourceList struct {

@@ -34,7 +34,7 @@ import (
 )
 
 // Name kubernetes runtime string id.
-var Name = common.Source_Kubernetes.String()
+var Name = common.Runtime_Kubernetes.String()
 
 // New creates new Runtime.
 func New() (*Runtime, error) {
